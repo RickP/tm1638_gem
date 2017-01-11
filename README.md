@@ -14,6 +14,8 @@ Installation on your Pi:
 Ruby example:
 
     require 'tm1638'              # Include the gem
+    
+    Tm1638.init(17, 21, 22)       # Initialize the tm1638 on GPIO pins 17 (data), 21 (clock) and 22 (strobe)
 
     Tm1638.set_leds([1,1,1,0,0,0,0,0], [0,0,0,1,1,1,0,0])  # Set LEDs 1-3 to red and 4-6 to green
 
